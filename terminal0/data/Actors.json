@@ -1,0 +1,8 @@
+[
+null,
+{"id":1,"battlerName":"Amets","characterIndex":0,"characterName":"Amets","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Amets","traits":[],"initialLevel":1,"maxLevel":99,"name":"Amets","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"Martzel","characterIndex":0,"characterName":"Martzel","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Martzel","traits":[],"initialLevel":1,"maxLevel":99,"name":"Martzel","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"Nikole","characterIndex":0,"characterName":"Nikole","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Nikole","traits":[],"initialLevel":1,"maxLevel":99,"name":"Nikole","nickname":"","note":"","profile":""},
+{"id":4,"battlerName":"Aintzane","characterIndex":0,"characterName":"Aintzane","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Aintzane","traits":[],"initialLevel":1,"maxLevel":99,"name":"Aintzane","nickname":"","note":"","profile":""},
+{"id":5,"battlerName":"","characterIndex":4,"characterName":"!Flame","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"Unset","nickname":"Unset","note":"","profile":""}
+]

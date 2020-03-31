@@ -1,2 +1,0 @@
-# urrezkokaiola.github.io
-Website
