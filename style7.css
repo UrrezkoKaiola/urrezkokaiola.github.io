@@ -1,0 +1,19 @@
+body {
+  background-color: #c72e51;
+}
+
+h1 {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 48px;
+}
+
+p {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+}
+
+/*
+YSBjYXQgZmxpcHMgYSBrZXlib2FyZAphIGNhdCBmbGlwcyBhIGtleWJvYXJkIChtZW93KQphIGNhdCBmbGlwcyBhIGtleWJvYXJk
+*/
