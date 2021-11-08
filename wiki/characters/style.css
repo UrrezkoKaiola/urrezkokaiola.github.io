@@ -24,6 +24,22 @@ table, th, td {
 	padding: 15px 10px;
 }
 
+.container {
+  position: relative;
+}
+
+#clip {
+  position: absolute;
+  clip: rect(0, 150px, 350px, 0);
+  margin-top: -70px;
+}
+
+#clip2 {
+  position: absolute;
+  clip: rect(0, 150px, 350px, 0);
+  margin-top: -70px;
+  margin-left: 145px;
+}
 
 
 
