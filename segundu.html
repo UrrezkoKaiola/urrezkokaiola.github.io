@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Message</title>
+<link rel="stylesheet" href="style4.css">
+</head>
+<body>
+<h1>End of Urrezko Kaiola Year Two in:</h1>
+<p id="demo">......</p>
+<h2>You'll see.</h2>
+<script>
+let countDownDate = new Date("Dec 1, 2020 13:43:25").getTime();
+let x = setInterval(function() {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "?????";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
