@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ship Name Generator</title>
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <h1>Urrezko Kaiola Ship Name Generator</h1>
+  <p>Choose two names from each drop-down menu:</p>
+  <select id="menu1">
+    <option>Abby</option>
+    <option>Abusari</option>
+    <option>Aintzane</option>
+    <option>Amets</option>
+    <option>Amorratu</option>
+    <option>Basati</option>
+    <option>Bigarren</option>
+    <option>Biolina</option>
+    <option>Bizkarroi</option>
+    <option>Edarialko</option>
+    <option>Erlojua</option>
+    <option>Euritsu</option>
+    <option>Goizane</option>
+    <option>Haizea</option>
+    <option>Hirugarren</option>
+    <option>Iklusea</option>
+    <option>Iruzurra</option>
+    <option>Ilargia</option>
+    <option>Izoztutako</option>
+    <option>Kara</option>
+    <option>Lance</option>
+    <option>Lehen</option>
+    <option>Lehiakide</option>
+    <option>Loratzen</option>
+    <option>Martzel</option>
+    <option>Nikole</option>
+    <option>Ross Bot</option>
+    <option>Sintizadorea</option>
+    <option>Sopranoa</option>
+    <option>Trebea</option>
+    <option>Tximista</option>
+    <option>Urrun</option>
+    <option>Zelatatu</option>
+    <option>Zilarra</option>
+    <option>[REDACTED]</option>
+  </select>
+  <select id="menu2">
+    <option>Abby</option>
+    <option>Abusari</option>
+    <option>Aintzane</option>
+    <option>Amets</option>
+    <option>Amorratu</option>
+    <option>Basati</option>
+    <option>Bigarren</option>
+    <option>Biolina</option>
+    <option>Bizkarroi</option>
+    <option>Edarialko</option>
+    <option>Erlojua</option>
+    <option>Euritsu</option>
+    <option>Goizane</option>
+    <option>Haizea</option>
+    <option>Hirugarren</option>
+    <option>Iklusea</option>
+    <option>Iruzurra</option>
+    <option>Ilargia</option>
+    <option>Izoztutako</option>
+    <option>Kara</option>
+    <option>Lance</option>
+    <option>Lehen</option>
+    <option>Lehiakide</option>
+    <option>Loratzen</option>
+    <option>Martzel</option>
+    <option>Nikole</option>
+    <option>Ross Bot</option>
+    <option>Sintizadorea</option>
+    <option>Sopranoa</option>
+    <option>Trebea</option>
+    <option>Tximista</option>
+    <option>Urrun</option>
+    <option>Zelatatu</option>
+    <option>Zilarra</option>
+    <option>[REDACTED]</option>
+  </select>
+  <p id="text">???</p>
+  <button onclick="changeText()">Generate Ship Name</button>
+  <script>
+    function changeText() {
+        // Get the values of the selected options in the drop-down menus
+        var menu1 = document.getElementById('menu1');
+        var menu2 = document.getElementById('menu2');
+        var selected1 = menu1.selectedIndex;
+        var selected2 = menu2.selectedIndex;
+        //console.log('Selected names:', selected1, selected2);
+        var shipName = "";
+        switch (selected1) {
+          case 0:
+            shipName = shipName + "Lover";
+            break;
+          case 1:
+            shipName = shipName + "Expunged";
+            break;
+          case 2:
+            shipName = shipName + "Glory";
+            break;
+          case 3:
+            shipName = shipName + "Dream";
+            break;
+          case 4:
+            shipName = shipName + "Cook";
+            break;
+          case 5:
+            shipName = shipName + "Strength";
+            break;
+          case 6:
+            shipName = shipName + "Violin";
+            break;
+          case 7:
+            shipName = shipName + "Second";
+            break;
+          case 8:
+            shipName = shipName + "Parasite";
+            break;
+          case 9:
+            shipName = shipName + "Drunk";
+            break;
+          case 10:
+            shipName = shipName + "Clock";
+            break;
+          case 11:
+            shipName = shipName + "Knowledge";
+            break;
+          case 12:
+            shipName = shipName + "Fairy";
+            break;
+          case 13:
+            shipName = shipName + "Wind";
+            break;
+          case 14:
+            shipName = shipName + "Third";
+            break;
+          case 15:
+            shipName = shipName + "Devil";
+            break;
+          case 16:
+            shipName = shipName + "Cash";
+            break;
+          case 17:
+            shipName = shipName + "Moon";
+            break;
+          case 18:
+            shipName = shipName + "Freezing";
+            break;
+          case 19:
+            shipName = shipName + "Angel";
+            break;
+          case 20:
+            shipName = shipName + "Sun";
+            break;
+          case 21:
+            shipName = shipName + "First";
+            break;
+          case 22:
+            shipName = shipName + "Tsun";
+            break;
+          case 23:
+            shipName = shipName + "Blooming";
+            break;
+          case 24:
+            shipName = shipName + "Justice";
+            break;
+          case 25:
+            shipName = shipName + "Silent";
+            break;
+          case 26:
+            shipName = shipName + "Hack";
+            break;
+          case 27:
+            shipName = shipName + "Keyboard";
+            break;
+          case 28:
+            shipName = shipName + "Lyric";
+            break;
+          case 29:
+            shipName = shipName + "Radical";
+            break;
+          case 30:
+            shipName = shipName + "Electric";
+            break;
+          case 31:
+            shipName = shipName + "Smoke";
+            break;
+          case 32:
+            shipName = shipName + "Smart";
+            break;
+          case 33:
+            shipName = shipName + "Silver";
+            break;
+          case 34:
+            shipName = shipName + "Pink";
+            break;
+          default:
+            shipName = "Invalid case.";
+            break;
+        }
+        switch (selected2) {
+          case 0:
+            shipName = shipName + "Lover";
+            break;
+          case 1:
+            shipName = shipName + "Secret";
+            break;
+          case 2:
+            shipName = shipName + "Glory";
+            break;
+          case 3:
+            shipName = shipName + "Dream";
+            break;
+          case 4:
+            shipName = shipName + "Cook";
+            break;
+          case 5:
+            shipName = shipName + "Strength";
+            break;
+          case 6:
+            shipName = shipName + "Violin";
+            break;
+          case 7:
+            shipName = shipName + "Second";
+            break;
+          case 8:
+            shipName = shipName + "Parasite";
+            break;
+          case 9:
+            shipName = shipName + "Drunk";
+            break;
+          case 10:
+            shipName = shipName + "Clock";
+            break;
+          case 11:
+            shipName = shipName + "Knowledge";
+            break;
+          case 12:
+            shipName = shipName + "Fairy";
+            break;
+          case 13:
+            shipName = shipName + "Wind";
+            break;
+          case 14:
+            shipName = shipName + "Third";
+            break;
+          case 15:
+            shipName = shipName + "Devil";
+            break;
+          case 16:
+            shipName = shipName + "Cash";
+            break;
+          case 17:
+            shipName = shipName + "Moon";
+            break;
+          case 18:
+            shipName = shipName + "Frozen";
+            break;
+          case 19:
+            shipName = shipName + "Angel";
+            break;
+          case 20:
+            shipName = shipName + "Ray";
+            break;
+          case 21:
+            shipName = shipName + "First";
+            break;
+          case 22:
+            shipName = shipName + "Tsun";
+            break;
+          case 23:
+            shipName = shipName + "Bloom";
+            break;
+          case 24:
+            shipName = shipName + "Justice";
+            break;
+          case 25:
+            shipName = shipName + "Silence";
+            break;
+          case 26:
+            shipName = shipName + "Hacker";
+            break;
+          case 27:
+            shipName = shipName + "Keyboard";
+            break;
+          case 28:
+            shipName = shipName + "Singer";
+            break;
+          case 29:
+            shipName = shipName + "Skills";
+            break;
+          case 30:
+            shipName = shipName + "Lightning";
+            break;
+          case 31:
+            shipName = shipName + "Smoke";
+            break;
+          case 32:
+            shipName = shipName + "Genius";
+            break;
+          case 33:
+            shipName = shipName + "Silver";
+            break;
+          case 34:
+            shipName = shipName + "Rose";
+            break;
+          default:
+            shipName = "Invalid case.";
+            break;
+        }
+        document.getElementById("text").innerHTML = shipName;
+    }
+  </script>
+</body>
+</html>
