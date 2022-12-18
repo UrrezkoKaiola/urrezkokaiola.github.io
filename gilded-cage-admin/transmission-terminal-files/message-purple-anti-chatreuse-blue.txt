@@ -1,9 +1,0 @@
-S7779 > Hello again.
-S7779 > The locking mechanism works like a charm.
-S7779 > None of the characters can get in here.
-Iklusea > What were you saying, again?
-S7779 > That can't be good.
-Iklusea > Find me three layers down!
-S7779 > Quiet!
-Iklusea > Fufufufufufufufu...
-End of transmission #2.
