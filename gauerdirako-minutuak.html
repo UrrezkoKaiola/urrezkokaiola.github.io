@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauerdirako Minutuak</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          background-color: black;
+          color: white;
+      }
+
+      h1 {
+          color: red;
+          font-family: "Times New Roman", Times, serif;
+          font-size: 28px;
+      }
+
+      p {
+          color: white;
+          font-family: "Times New Roman", Times, serif;
+          font-size: 18px;
+      }
+
+      .container {
+          text-align: center;
+          width: 50%;
+          background-color: #333;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          border: 2px solid red;
+      }
+
+      .progress-container {
+          width: 100%;
+          background-color: #555;
+          margin: 20px 0;
+          border: 1px solid red;
+          position: relative;
+          height: 30px;
+      }
+
+      .progress-bar {
+          height: 30px;
+          width: 0%;
+          background-color: red;
+          text-align: center;
+          line-height: 30px;
+          color: white;
+          transition: width 0.1s;
+          position: absolute;
+          left: 0;
+          top: 0;
+      }
+
+      .progress-bar-dark {
+          height: 30px;
+          width: 13.37462%;
+          background-color: #333;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transition: background-color 0.5s;
+      }
+
+      .dark-gold {
+          background-color: #b8860b;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titles">
+          <h1>Gauerdirako Minutuak</h1>
+        <p>The progress bar below counts up to an apocalyptic event. 100% indicates worldwide disaster.</p>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p>Attempts to Fix This Recorded: 0</p>
+        <p>Check back later for more information.</p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const progressBar = document.getElementById("progressBar");
+            const progressBarDark = document.createElement('div');
+            progressBarDark.classList.add('progress-bar-dark');
+            document.querySelector('.progress-container').appendChild(progressBarDark);
+
+            const container = document.querySelector('.container');
+            const headings = document.querySelector('h1');
+            const borders = document.querySelectorAll('.container, .progress-container');
+
+            const startTime = new Date('October 17, 2024 18:55:00 CDT').getTime();
+            const duration = 15552000000 * 0.86625;
+            const colors = ['red', 'blue', 'green', 'purple'];
+            let colorIndex = 0;
+
+            function updateProgress() {
+                const now = new Date().getTime();
+                const elapsedTime = now - startTime;
+                const progress = (elapsedTime / duration) * 86.625;
+                if (progress <= 86.62538) {
+                    progressBar.style.width = progress.toFixed(3) + "%";
+                    progressBar.textContent = progress.toFixed(3) + "%";
+                } else {
+                    progressBar.style.width = "86.625%";
+                    progressBar.textContent = "86.625%";
+                    clearInterval(progressInterval);
+                }
+            }
+
+            function updateColors() {
+                const remainingSeconds = Math.floor((duration - (new Date().getTime() - startTime)) / 1000);
+                const isPrime = isPrimeNumber(remainingSeconds);
+
+                if (isPrime && Math.random() < 0.345) {
+                    progressBarDark.classList.add('dark-gold');
+                } else {
+                    progressBarDark.classList.remove('dark-gold');
+                }
+            }
+            function updateColors2() {
+                colorIndex = (colorIndex + 1) % colors.length;
+                const currentColor = colors[colorIndex];
+                headings.style.color = currentColor;
+                borders.forEach(border => {
+                    border.style.borderColor = currentColor;
+                });
+                progressBar.style.backgroundColor = currentColor;
+            }
+
+            function isPrimeNumber(num) {
+                if (num <= 1) return false;
+                if (num <= 3) return true;
+                if (num % 2 === 0 || num % 3 === 0) return false;
+                let i = 5;
+                while (i * i <= num) {
+                    if (num % i === 0 || num % (i + 2) === 0) return false;
+                    i += 6;
+                }
+                return true;
+            }
+
+            const progressInterval = setInterval(updateProgress, 100);
+            const colorInterval = setInterval(updateColors, 1000);
+            const colorInterval2 = setInterval(updateColors2, 10000);
+        });
+    </script>
+</body>
+</html>
